@@ -1,0 +1,67 @@
+body {
+    margin: 0px;
+}
+
+.board {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 100px);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    position: absolute;
+}
+
+.square {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    cursor: pointer;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.tl, .tm, .tr {
+    border-top: none;
+}
+
+.tl, .ml, .bl {
+    border-left: none;
+}
+
+.bl, .bm, .br {
+    border-bottom: none;
+}
+
+.tr, .mr, .br {
+    border-right: none;
+}
+
+.message {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkslategray;
+    opacity: 0.85;
+    display: none;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    font-family: sans-serif;
+    z-index: 5;
+    font-size: 8vw;
+}
+
+button {
+    width: 14vw;
+    height: 8vh;
+    color: black;
+    font-size: 2vw;
+    cursor: pointer;
+}
